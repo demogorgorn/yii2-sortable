@@ -98,7 +98,7 @@ class Sortable extends \yii\base\Widget
         $js = "var {$id} = document.getElementById('{$id}');" . PHP_EOL;
 
         if ($this->varName !== null)
-            $js = "var {$this->varName} = ";
+            $js .= "var {$this->varName} = ";
 
         $js .= "Sortable.create({$id}, ";
         
