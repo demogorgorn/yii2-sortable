@@ -80,6 +80,9 @@ class Sortable extends \yii\base\Widget
         
         foreach ($this->items as $item) {
             $options = ArrayHelper::getValue($item, 'options', []);
+
+            if ($this->editable)
+                Html::addCssClass($options, 'editable');
            
             $content = ArrayHelper::getValue($item, 'content', '');
 
