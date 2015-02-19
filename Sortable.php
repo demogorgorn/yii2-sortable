@@ -97,8 +97,8 @@ class Sortable extends \yii\base\Widget
         
         $js = '';
 
-        if ($varName !== null)
-            $js = "var {$varName} = ";
+        if ($this->varName !== null)
+            $js = "var {$this->varName} = ";
 
         $js .= "Sortable.create({$id}, ";
         
