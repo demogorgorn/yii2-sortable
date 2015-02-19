@@ -71,7 +71,7 @@ class Sortable extends \yii\base\Widget
     /**
      * Render the list items for the sortable widget
      *
-     * @return string
+     * @return string 
      */
     protected function renderItems()
     {
