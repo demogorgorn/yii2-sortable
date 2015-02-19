@@ -100,13 +100,13 @@ class Sortable extends \yii\base\Widget
         if ($this->varName !== null)
             $js .= "var {$this->varName} = ";
 
-        $js .= "Sortable.create({$id});";/*, ";*/
+        $js .= "Sortable.create({$id},";
         
-        /*$clientOptions = Json::encode($this->clientOptions);
+        $clientOptions = Json::encode($this->clientOptions);
 
         $js .= $clientOptions;
 
-        $js .= ");";*/
+        $js .= ");";
 
         $view->registerJs($js);
     }
