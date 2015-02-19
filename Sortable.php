@@ -46,11 +46,11 @@ class Sortable extends \yii\base\Widget
     public function init()
     {
         parent::init();
-        $this->registerAssets();
-        
+
         if (!isset($this->options['id'])) 
             $this->options['id'] = $this->getId();
-        
+
+        $this->registerAssets();
         
         echo Html::beginTag('ul', $this->options);
     }
