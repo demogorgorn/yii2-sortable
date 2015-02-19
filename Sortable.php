@@ -31,6 +31,8 @@ class Sortable extends \yii\base\Widget
     
     public $clientOptions = [];
 
+    public $editable = false;
+
     /**
      * @var array the sortable items configuration for rendering elements within the sortable
      * list / grid. You can set the following properties:
@@ -80,6 +82,10 @@ class Sortable extends \yii\base\Widget
             $options = ArrayHelper::getValue($item, 'options', []);
            
             $content = ArrayHelper::getValue($item, 'content', '');
+
+            if ($this->editable)
+                $content .= '<i class="js-remove">✖</i>';
+
             $items .= Html::tag('li', $content, $options) . PHP_EOL;
         }
         return $items;
