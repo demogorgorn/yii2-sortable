@@ -17,11 +17,10 @@ namespace demogorgorn\sortable;
 class SortableAsset extends \yii\web\AssetBundle
 {
 
-    public function init()
-    {
-        $this->setSourcePath(__DIR__ . '/assets');
-        $this->setupAssets('js', ['sortable','ng-sortable']);
-        parent::init();
-    }
+    public $sourcePath = '@demogorgorn/sortable/assets';
+    public $js = [
+        'sortable.js',
+        'ng-sortable.js'
+    ];
 
 }
