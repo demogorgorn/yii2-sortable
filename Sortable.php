@@ -26,6 +26,8 @@ class Sortable extends \yii\base\Widget
      * @var string, variable name of js object
      */
     public $varName = null;
+
+    public $options = [];
     
     public $clientOptions = [];
 
