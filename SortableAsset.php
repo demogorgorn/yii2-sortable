@@ -22,5 +22,8 @@ class SortableAsset extends \yii\web\AssetBundle
         'sortable.js',
         'ng-sortable.js'
     ];
-
+	
+	public $css = [
+        'app.css'
+    ];
 }
