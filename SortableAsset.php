@@ -19,8 +19,7 @@ class SortableAsset extends \yii\web\AssetBundle
 
     public $sourcePath = '@demogorgorn/sortable/assets';
     public $js = [
-        'sortable.js',
-        'ng-sortable.js'
+        'sortable.js'
     ];
 	
 	public $css = [
