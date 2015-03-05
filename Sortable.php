@@ -111,7 +111,7 @@ class Sortable extends \yii\base\Widget
 
         $js .= "Sortable.create({$id},";
         
-        $clientOptions = Json::encode($this->clientOptions);
+        $clientOptions = Json::encode($this->clientOptions, JSON_FORCE_OBJECT);
 
         $js .= $clientOptions;
 
