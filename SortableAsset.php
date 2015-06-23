@@ -16,13 +16,13 @@ namespace demogorgorn\sortable;
  */
 class SortableAsset extends \yii\web\AssetBundle
 {
+    public $sourcePath = '@vendor/demogorgorn/yii2-sortable/assets';
 
-    public $sourcePath = '@demogorgorn/sortable/assets';
     public $js = [
-        'sortable.js'
+        'Sortable.js'
     ];
-	
-	public $css = [
+
+    public $css = [
         'app.css'
     ];
 }
